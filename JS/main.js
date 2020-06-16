@@ -34,3 +34,28 @@ seal_holy.addEventListener("click", function(){
   var audio = new Audio("Media/mibph_holy.mp3");
   audio.play();
 })
+
+/*Mobilgerate weiterleiten*/
+ if (window.screen.width < 1000) {
+  window.location = 'm.mibph.org';
+}
+
+/*to top button*/
+var t1 = 0;
+window.onscroll = scroll1;
+
+function scroll1() {
+  var toTop = document.getElementById('toTop');
+  window.scrollY > 0 ? toTop.style.display = 'Block' : toTop.style.display = 'none';
+}
+
+function smoothscroll() {
+  var y1 = window.scrollY;
+  y1 = y1 - 1000;
+  window.scrollTo(0, y1);
+  if (y1 > 0) {
+    t1 = setTimeout("smoothscroll()", 100);
+  } else {
+    clearTimeout(t1);
+  }
+}
