@@ -29,13 +29,12 @@
     color: white;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 40%;
-    left: 26%;
-    transform: translate(-50%, -50%);
     z-index: 2;
     padding: 20px;
     text-align: center;
     width: 45%;
+    margin-top: -25%;
+    margin-left: 26%;
   }
   
   #cssmenu,
@@ -66,8 +65,8 @@
     border-bottom: 3px solid #47c9af;
     line-height: 1;
     width: 48%;
-    top: 15%;
-    left: 26%;
+    margin-left: 26%;
+    margin-top: -45%;
     align-content: center;
     position: absolute;
   }
@@ -144,6 +143,7 @@
     color: #c300ff;
   }
   
+  /*mobilspezifisch!*/
   @media (max-width:954px)  { 
     #cssmenu {
       border-bottom: 3px solid #47c9af;
@@ -154,30 +154,30 @@
       align-content: center;
       position: absolute;
     }
-  
+  /*Mobilspezifisch!*/
     .sealcontainment {
       background-color: rgb(0,0,0);
       background-color: rgba(0,0,0, 0.4);
       color: white;
       border: 3px solid #f1f1f1;
       position: absolute;
-      top: 40%;
+      top: 90%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
       padding: 20px;
       text-align: center;
       width: 45%;
-      margin-top: 40%;
+      margin-top: 25%;
     }
   }
   footer {
-      background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0);
       background-color: rgba(0,0,0, 0.4);
       color: white;
       border: 3px solid #f1f1f1;
       position: absolute;
-      margin-top: -15%;
+      margin-top: -10%;
       margin-left: 29%;
       width: 40%;
       z-index: 2;
@@ -197,19 +197,19 @@
     }
   
     .sealcontainment {
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.4);
-        color: white;
-        border: 3px solid #f1f1f1;
-        position: absolute;
-        margin-bottom: 50%;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        padding: 20px;
-        text-align: center;
-        width: 45%;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.4);
+      color: white;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      padding: 20px;
+      text-align: center;
+      width: 45%;
+      margin-top: 25%;
     }
   }
   
@@ -238,58 +238,12 @@
   a {
     color: #7affe4
   }
-
-.container {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center {
-  width: 180px;
-  height: 60px;
-  position: absolute;
-}
-
-.btn {
-  margin-top: 80%;
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #21ff6b;
-  outline: none;
-  transition: 1s ease-in-out;
-}
-
-svg {
-  margin-top: -5%;
-  position: absolute;
-  left: 27%;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-}
-
-.btn:hover {
-  transition: 1s ease-in-out;
-  background: #232324;
-}
-
-.btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.btn span {
-  color: white;
-  font-size: 18px;
-  font-weight: 100;
-}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
