@@ -13,3 +13,5 @@
 8. Add "Currently in progress" page
 9. Build a Landing page for the Bot, put the current homepage into a seperate tab
 10. Route 404s to customized page
+11. Add previews such as text and images that will be shown upon sending the link
+12. Add favicon
