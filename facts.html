@@ -21,11 +21,11 @@
       </div>
         <div class="sealcontainment animate__animated animate__fadeInUp">
           <p>Random Seal fact:</p>
-          <?php include "getquote.php"; ?>
+          <div id="quoteDisplay"></div>
           <div class="container">
           <div class="center">
         </div>
-        <button class="btn" onClick="window.location.reload();">
+        <button class="btn" onClick="newQuote()">
              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
@@ -45,6 +45,7 @@
           <p class="smol">A list with websites that we pull the facts from into our Database will be coming soon.</p>
         </footer>
       <script type="text/javascript" src="JS/main.js"></script>
+      <script type="text/javascript" src="JS/quotes.js"></script>
       <img id="toTop" src="https://alex-web.dev/files/public-docs/arrow.png" onclick="smoothscroll()" title="Go To Top">
   </body>
 </html>
