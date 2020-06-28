@@ -13,3 +13,4 @@
 10. Route 404s to customized page
 11. Add previews such as text and images that will be shown upon sending the link
 12. Add favicon
+13. Add an option to share seal facts to friends
